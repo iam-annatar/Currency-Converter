@@ -1,4 +1,4 @@
-import { Home, Search } from "..";
+import { Home, Search } from "../pages";
 import PATH from "./path";
 
 const routes = [

@@ -1,16 +1,19 @@
+import { Container } from "@mui/material";
 import { Suspense } from "react";
 import { Outlet } from "react-router-dom";
 
-import Bottombar from "./Bottombar";
+import Bottombar from "./navigation/Bottombar";
+import Navbar from "./navigation/Navbar";
 
 const Layout = () => {
   return (
     <>
-      <main>
+      <Navbar />
+      <Container>
         <Suspense fallback={<div>Loading...</div>}>
           <Outlet />
         </Suspense>
-      </main>
+      </Container>
       <Bottombar />
     </>
   );

@@ -1,6 +1,6 @@
 import { Button, Typography } from "@mui/material";
 
-import type { NavIconsProps } from "../interfaces";
+import type { NavIconsProps } from "../../interfaces";
 
 const NavIcons: React.FC<NavIconsProps> = ({ icon, caption }) => {
   return (
