@@ -2,6 +2,7 @@ import type { Theme } from "@mui/material";
 import { Box, useMediaQuery } from "@mui/material";
 
 import ChartsIcon from "../../assets/icons/charts.svg?react";
+import HomeIcon from "../../assets/icons/home.svg?react";
 import SearchIcon from "../../assets/icons/search.svg?react";
 import SwapIcon from "../../assets/icons/swap.svg?react";
 import NavIcons from "./NavIcons";
@@ -29,6 +30,7 @@ const Bottombar = () => {
         p: "1rem 0",
       }}
     >
+      <NavIcons icon={<HomeIcon />} caption="Home" />
       <NavIcons icon={<ChartsIcon />} caption="Charts" />
       <NavIcons icon={<SwapIcon />} caption="Swap" />
       <NavIcons icon={<SearchIcon />} caption="Search" />
