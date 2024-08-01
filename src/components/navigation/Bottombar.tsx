@@ -8,7 +8,7 @@ import NavIcons from "./NavIcons";
 
 const Bottombar = () => {
   // make bottomBar only appear on mobile screen size
-  const matches = useMediaQuery((theme: Theme) => theme.breakpoints.down("md"));
+  const matches = useMediaQuery((theme: Theme) => theme.breakpoints.down("sm"));
 
   if (!matches) return;
 

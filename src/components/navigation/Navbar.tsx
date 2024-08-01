@@ -7,7 +7,7 @@ import Logo from "../Logo";
 
 const Navbar = () => {
   // make Navbar only appear on above medium screen size
-  const matches = useMediaQuery((theme: Theme) => theme.breakpoints.up("md"));
+  const matches = useMediaQuery((theme: Theme) => theme.breakpoints.up("sm"));
 
   if (!matches) return;
 
