@@ -1,4 +1,4 @@
-import { Home, Search } from "../pages";
+import { Charts, Home, Search, Swap } from "../pages";
 import PATH from "./path";
 
 const routes = [
@@ -9,6 +9,14 @@ const routes = [
   {
     path: PATH.SEARCH,
     element: <Search />,
+  },
+  {
+    path: PATH.SWAP,
+    element: <Swap />,
+  },
+  {
+    path: PATH.CHARTS,
+    element: <Charts />,
   },
 ];
 
