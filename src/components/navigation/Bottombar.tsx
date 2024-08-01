@@ -15,6 +15,7 @@ const Bottombar = () => {
   return (
     <Box
       sx={{
+        backgroundColor: "primary.main",
         display: "flex",
         justifyContent: "space-around",
         position: "fixed",
@@ -24,7 +25,7 @@ const Bottombar = () => {
         zIndex: 1000,
         borderTop: "1px solid #EFBF3A",
         boxShadow: "4px -10px 20px rgba(0, 0, 0, 0.25)",
-        borderRadius: "1rem",
+        borderRadius: "1rem 1rem 0 0",
         p: "1rem 0",
       }}
     >

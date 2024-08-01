@@ -1,9 +1,8 @@
-import { Box, Button, Container, useMediaQuery } from "@mui/material";
+import { Container, useMediaQuery } from "@mui/material";
 import type { Theme } from "@mui/material/styles";
 import { NavLink } from "react-router-dom";
 
 import PATH from "../../app/pages/routes/path";
-import Lan from "../../assets/icons/lan.svg?react";
 import Logo from "../Logo";
 
 const Navbar = () => {
@@ -22,24 +21,19 @@ const Navbar = () => {
       }}
     >
       <Logo />
-      <Box sx={{ display: "flex", gap: "1rem", alignItems: "center" }}>
-        <nav>
-          <ul className="nav">
-            <li>
-              <NavLink to={PATH.SWAP}>Swap</NavLink>
-            </li>
-            <li>
-              <NavLink to={PATH.CHARTS}>Charts</NavLink>
-            </li>
-            <li>
-              <NavLink to={PATH.SEARCH}>Search</NavLink>
-            </li>
-          </ul>
-        </nav>
-        <Button>
-          <Lan />
-        </Button>
-      </Box>
+      <nav>
+        <ul className="nav">
+          <li>
+            <NavLink to={PATH.SWAP}>Swap</NavLink>
+          </li>
+          <li>
+            <NavLink to={PATH.CHARTS}>Charts</NavLink>
+          </li>
+          <li>
+            <NavLink to={PATH.SEARCH}>Search</NavLink>
+          </li>
+        </ul>
+      </nav>
     </Container>
   );
 };
