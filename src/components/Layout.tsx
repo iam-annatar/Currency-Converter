@@ -33,6 +33,7 @@ const Layout = () => {
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
                 backgroundSize: "cover",
+                overflow: "hidden",
               }
             : {
                 width: "100dvw",
@@ -41,6 +42,7 @@ const Layout = () => {
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center ",
                 backgroundSize: "cover",
+                overflow: "hidden",
               }
           : null
       }
