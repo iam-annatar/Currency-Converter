@@ -11,20 +11,24 @@ const Logo = () => {
       style={{
         textDecoration: "none",
         display: "flex",
+        justifyContent: "center",
         gap: ".5rem",
-        flexDirection: "column",
         alignItems: "center",
       }}
       to={PATH.HOME}
     >
-      <MainLogo />
-      <Typography
-        fontSize="1.5rem"
-        fontWeight="bold"
-        color={theme.palette.secondary.main}
-      >
-        AM Swap
+      <Typography variant="h5" color={theme.palette.text.primary}>
+        <span
+          style={{
+            color: theme.palette.secondary.main,
+            fontWeight: "bold",
+          }}
+        >
+          Am
+        </span>{" "}
+        Swap
       </Typography>
+      <MainLogo />
     </Link>
   );
 };
