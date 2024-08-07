@@ -10,7 +10,7 @@
   text-decoration: none;
   font-size: 1.3rem;
   font-weight: bold;
-  color: #27ae60;
+  color: inherit;
 }
 
 .nav li a:after {
@@ -21,8 +21,12 @@
   transition: transform 250ms ease-in-out;
 }
 
-.nav li a:is(:hover, :focus-visible)::after {
+.nav li a:is(:hover, :active)::after {
   transform: scaleX(1);
+}
+
+.nav li a:is(:hover, :active) {
+  color: #27ae60;
 }
 
 @font-face {

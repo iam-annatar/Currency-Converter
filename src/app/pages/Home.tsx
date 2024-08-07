@@ -3,6 +3,7 @@ import { Button, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { NavLink } from "react-router-dom";
 
 import CustomAnimation from "../../components/Custom-animation";
+import Logo from "../../components/Logo";
 import PATH from "./routes/path";
 
 const Home = () => {
@@ -10,10 +11,15 @@ const Home = () => {
   const matches = useMediaQuery((t: Theme) => t.breakpoints.down("sm"));
   return (
     <main>
+      {matches ? (
+        <div style={{ marginTop: "2rem" }}>
+          <Logo />
+        </div>
+      ) : null}
       <header
         style={
           matches
-            ? { marginTop: "8rem", textAlign: "center" }
+            ? { marginTop: "2rem", textAlign: "center" }
             : { marginTop: "8rem" }
         }
       >
