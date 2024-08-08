@@ -51,14 +51,20 @@ const Layout = () => {
       <Container>
         <Suspense
           fallback={
-            <CircularProgress
+            <div
               style={{
                 position: "fixed",
                 top: "50%",
                 left: "50%",
-                color: theme.palette.secondary.main,
+                transform: "translate(-50%,-50%)",
               }}
-            />
+            >
+              <CircularProgress
+                style={{
+                  color: theme.palette.secondary.main,
+                }}
+              />
+            </div>
           }
         >
           <Outlet />
