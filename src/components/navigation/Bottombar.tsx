@@ -18,7 +18,7 @@ const Bottombar = () => {
   return (
     <Box
       sx={{
-        backgroundColor: "primary.main",
+        bgcolor: "transparent",
         display: "flex",
         justifyContent: "space-around",
         position: "fixed",
