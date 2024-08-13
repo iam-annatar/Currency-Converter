@@ -21,7 +21,7 @@
   transition: transform 250ms ease-in-out;
 }
 
-.nav a:is(:hover, :active)::after {
+.nav a:is(:hover, :focus-visible)::after {
   transform: scaleX(1);
 }
 
