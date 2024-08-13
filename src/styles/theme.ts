@@ -13,10 +13,10 @@ export const theme = createTheme({
       secondary: "#000",
     },
     primary: {
-      main: "#181F2C",
+      main: "#191c21",
     },
     secondary: {
-      main: "#27AE60",
+      main: "#217c33",
     },
   },
 });
