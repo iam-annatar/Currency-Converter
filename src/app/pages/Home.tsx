@@ -1,6 +1,6 @@
 import type { Theme } from "@mui/material";
 import { Button, Typography, useMediaQuery, useTheme } from "@mui/material";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import CustomAnimation from "../../components/Custom-animation";
 import Logo from "../../components/Logo";
@@ -35,15 +35,12 @@ const Home = () => {
               100 currencies and easly convert between them.
             </Typography>{" "}
           </div>
-          <NavLink to={PATH.SWAP}>
+          <Link to={PATH.SWAP}>
             <Button
+              size="large"
               sx={{
-                maxWidth: "fit-content",
-                padding: ".7rem 1rem",
-                borderRadius: "2rem",
-                textTransform: "none",
-                fontSize: "1.125rem",
-                fontWeight: "bold",
+                maxWidth: "10rem",
+                borderRadius: "1rem",
                 mt: "2rem",
                 bgcolor: theme.palette.secondary.main,
                 ":active": {
@@ -55,9 +52,11 @@ const Home = () => {
               }}
               variant="contained"
             >
-              Start Swapping
+              <Typography sx={{ textTransform: "none" }} variant="body1">
+                Start Swapping
+              </Typography>
             </Button>
-          </NavLink>
+          </Link>
         </CustomAnimation>
       </header>
     </main>
