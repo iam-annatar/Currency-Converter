@@ -1,8 +1,8 @@
 import { Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
 
-import PATH from "../app/pages/routes/path";
-import MainLogo from "../assets/icons/currency-icon.svg?react";
+import PATH from "../../app/pages/routes/path";
+import MainLogo from "../../assets/icons/currency-icon.svg?react";
 
 const Logo = () => {
   const theme = useTheme();

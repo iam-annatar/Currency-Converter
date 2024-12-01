@@ -3,7 +3,7 @@ import { Button, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
 
 import CustomAnimation from "../../components/Custom-animation";
-import Logo from "../../components/Logo";
+import Logo from "../../components/navigation/Logo";
 import PATH from "./routes/path";
 
 const Home = () => {
