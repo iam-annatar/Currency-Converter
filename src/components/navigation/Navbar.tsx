@@ -3,7 +3,7 @@ import type { Theme } from "@mui/material/styles";
 import { NavLink } from "react-router-dom";
 
 import PATH from "../../app/pages/routes/path";
-import Logo from "../Logo";
+import Logo from "./Logo";
 
 const Navbar = () => {
   // make Navbar only appear on above medium screen size
